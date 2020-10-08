@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@actions": "./src/js/actions/",
+          "@actionTypes": "./src/js/actions/types.ts",
+          "@actionCreators": "./src/js/actions/creators.ts"
+        }
+      }
+    ]
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    },
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "html"],
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  }
+}
+
+// esw ./src --ext .jsx,.js,.tsx,.ts
