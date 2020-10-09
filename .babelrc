@@ -5,9 +5,9 @@
       {
         "root": ["./"],
         "alias": {
-          "@actions": "./src/js/actions/",
+          "@actions": "./src/js/actions/index.ts",
           "@actionTypes": "./src/js/actions/types.ts",
-          "@actionCreators": "./src/js/actions/creators.ts"
+          "@components": "./src/js/components"
         }
       }
     ]

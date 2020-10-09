@@ -20,8 +20,8 @@
     "baseUrl": ".",
     "paths": {
       "@actionTypes": ["./src/js/actions/types.ts"],
-      "@actionCreators": ["./src/js/actions/creators.ts"],
-      "@actions": ["./src/js/actions/"]
+      "@actions": ["./src/js/actions/"],
+      "@components/*": ["./src/js/components/*"]
     },
     "noImplicitAny": true,
     "strictNullChecks": true
