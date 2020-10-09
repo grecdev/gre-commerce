@@ -1,9 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 /** Spacing **/
 /* Margins */
 /* Margin All */
@@ -261,7 +255,7 @@
   overflow: visible;
 }
 .overflow-auto {
-    overflow: auto;
+  overflow: auto;
 }
 .visibility-hidden {
   visibility: hidden;
