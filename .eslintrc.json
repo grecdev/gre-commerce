@@ -38,7 +38,7 @@
     "max-len": [
       "error",
       {
-        "code": 80
+        "code": 100
       }
     ],
     "indent": [
@@ -51,7 +51,7 @@
     ],
     "quotes": [
       "error",
-      "double"
+      "single"
     ],
     "comma-dangle": [
       "error",
@@ -63,7 +63,9 @@
     ],
     "react/jsx-closing-bracket-location": [
       1,
-      "ligne-aligned"
+      {
+        "location": "line-aligned"
+      }
     ],
     "arrow-parens": [
       "error",
