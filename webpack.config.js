@@ -12,11 +12,7 @@ module.exports = {
         loader: 'babel-loader',
         // Where we define our presets
         query: {
-          presets: [
-            '@babel/preset-typescript',
-            '@babel/preset-env',
-            '@babel/preset-react',
-          ],
+          presets: ['@babel/preset-typescript', '@babel/preset-env', '@babel/preset-react'],
           plugins: ['@babel/plugin-proposal-class-properties'],
         },
       },
@@ -36,5 +32,7 @@ module.exports = {
       },
     ],
   },
-  resolve: { extensions: ['.ts', '.tsx', '.js', '.jsx','.json'] },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
+  },
 };
