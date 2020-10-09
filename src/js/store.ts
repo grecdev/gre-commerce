@@ -1,4 +1,4 @@
-import { createStore, applyMiddleware, compose } from 'redux';
+import { applyMiddleware, compose, createStore } from 'redux';
 // A middleware used when we have async operations and want to use dispatch
 import thunk from 'redux-thunk';
 import reducer from './reducers';

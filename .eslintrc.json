@@ -12,18 +12,24 @@
   "settings": {
     "import/resolver": {
       "babel-module": {}
-    },
+    }
+  },
+  "rules": {
     "sort-imports": [
       "error",
       {
         "ignoreCase": false,
-        "ignoreDeclarationSort": false,
+        "ignoreDeclarationSort": true,
         "ignoreMemberSort": false,
-        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+        "memberSyntaxSortOrder": ["none", "all", "single", "multiple"],
         "allowSeparatedGroups": false
       }
-    ]
+    ],
+    // to disable console.log error use - // eslint-disable-next-line no-console
+    "no-console": "error",
+    "max-len": ["error", { "code": 80 }]
   }
 }
 
 // esw ./src --ext .jsx,.js,.tsx,.ts
+// or you can add it in the scripts and you can run it concurrently
