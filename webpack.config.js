@@ -1,7 +1,7 @@
 module.exports = {
   devtool: 'none',
   entry: {
-    main: ['@babel/polyfill', './src/js/index.tsx'], // Which file we want to use to be our source file, entry point, that have modern JS
+    main: ['@babel/polyfill', './src/js/index.tsx'] // Which file we want to use to be our source file, entry point, that have modern JS
   },
   module: {
     rules: [
@@ -12,17 +12,13 @@ module.exports = {
         loader: 'babel-loader',
         // Where we define our presets
         query: {
-          presets: [
-            '@babel/preset-typescript',
-            '@babel/preset-env',
-            '@babel/preset-react',
-          ],
-          plugins: ['@babel/plugin-proposal-class-properties'],
-        },
+          presets: ['@babel/preset-typescript', '@babel/preset-env', '@babel/preset-react'],
+          plugins: ['@babel/plugin-proposal-class-properties']
+        }
       },
       {
         test: /\.html$/,
-        use: ['html-loader'],
+        use: ['html-loader']
       },
       {
         test: /\.(mp4|webp|jpg|jpeg|png|gif|mp3|svg|ttf|woff2|woff|eot)$/i,
@@ -30,11 +26,13 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: 'assets/media/[name].[hash].[ext]',
-            esModule: false,
-          },
-        },
-      },
-    ],
+            esModule: false
+          }
+        }
+      }
+    ]
   },
-  resolve: { extensions: ['.ts', '.tsx', '.js', '.json'] },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.json']
+  }
 };

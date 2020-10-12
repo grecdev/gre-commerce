@@ -1,0 +1,69 @@
+@import '../../../../css/sass_assets/mixins_extends';
+@import '../../../../css/sass_assets/variables';
+
+#main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  @include flex(row, space-between, center, nowrap);
+  padding: 1rem;
+
+  &.fixed-header {
+    background: $dark-primary-color;
+  }
+
+  #nike-logo img {
+    width: 80px;
+  }
+
+  > nav {
+    color: $white;
+    overflow: hidden;
+    padding: 0.3rem 0;
+
+    .line {
+      height: 3px;
+      background: $orange-primary-color;
+      bottom: 0;
+      transition: width 250ms ease-in-out, transform 250ms ease-in-out;
+    }
+
+    a {
+      text-transform: uppercase;
+      padding: 0 1rem;
+      padding-bottom: 0.5rem;
+      border: 1px solid transparent;
+    }
+  }
+
+  .interactive-cart-navbar {
+    @include flex(row, space-between, center, nowrap);
+
+    .input-box {
+      @include flex(row, space-between, center, nowrap);
+      border-radius: 9px;
+
+      #search-product-input {
+        background: $white;
+        padding: 0.3rem 1rem;
+        padding-left: 2.5rem;
+
+        &::placeholder {
+          color: #4d5259;
+          font-style: italic;
+          font-weight: 100;
+        }
+      }
+    }
+
+    #enable-cart-menu {
+      cursor: pointer;
+
+      img {
+        width: 30px;
+      }
+    }
+  }
+}

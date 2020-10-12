@@ -12,18 +12,41 @@
   "settings": {
     "import/resolver": {
       "babel-module": {}
-    },
+    }
+  },
+  "rules": {
     "sort-imports": [
       "error",
       {
         "ignoreCase": false,
-        "ignoreDeclarationSort": false,
+        "ignoreDeclarationSort": true,
         "ignoreMemberSort": false,
-        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+        "memberSyntaxSortOrder": ["none", "all", "single", "multiple"],
         "allowSeparatedGroups": false
       }
-    ]
+    ],
+    // to disable console.log error use - // eslint-disable-next-line no-console
+    "no-console": "error",
+    "max-len": [
+      "error",
+      {
+        "code": 100
+      }
+    ],
+    "indent": ["error", 2],
+    "semi": ["error", "always"],
+    "quotes": ["error", "single"],
+    "jsx-quotes": ["error", "prefer-single"],
+    "comma-dangle": ["error", "never"],
+    "object-curly-spacing": ["error", "always"],
+    "react/jsx-closing-bracket-location": [
+      1,
+      {
+        "location": "line-aligned"
+      }
+    ],
+    "arrow-parens": ["error", "as-needed"]
   }
 }
-
 // esw ./src --ext .jsx,.js,.tsx,.ts
+// or you can add it in the scripts and you can run it concurrently
