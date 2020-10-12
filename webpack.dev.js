@@ -9,8 +9,8 @@ module.exports = merge(config, {
     new HtmlWebpackPlugin({
       // Also generate a index.html
       filename: 'index.html',
-      template: './public/index.html',
-    }),
+      template: './public/index.html'
+    })
   ],
   module: {
     rules: [
@@ -19,10 +19,10 @@ module.exports = merge(config, {
         use: [
           'style-loader', // 3. Inject styles into DOM
           'css-loader', // 2. Turns css into js
-          'sass-loader', // 1. Turns sass into css
-        ],
-      },
-    ],
+          'sass-loader' // 1. Turns sass into css
+        ]
+      }
+    ]
   },
-  devServer: { historyApiFallback: true },
+  devServer: { historyApiFallback: true }
 });

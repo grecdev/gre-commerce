@@ -13,6 +13,7 @@
     "@types/react-redux": "^7.1.9",
     "@types/react-router-dom": "^5.1.6",
     "eslint-plugin-html": "^6.1.0",
+    "query-string": "^6.13.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.1",
@@ -29,6 +30,7 @@
   },
   "scripts": {
     "dev": "concurrently \"tsc --watch\" \"webpack-dev-server --config webpack.dev.js --content-base src/ --open\" \"esw --watch ./src --ext .jsx,.js,.tsx,.ts\"",
+    "prettier": "npx prettier --write .",
     "build": "webpack --config webpack.prod.js"
   },
   "eslintConfig": {

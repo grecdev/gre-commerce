@@ -14,7 +14,7 @@ module.exports = merge(config, {
     // Output folder
     path: path.resolve(__dirname, 'dist'), // __dirname = current directory, and a folder called dist
     filename: 'assets/js/index.[contentHash].js', // Create index.js in dist folder [name].[contentHash].js
-    publicPath: './',
+    publicPath: './'
   },
   optimization: {
     minimizer: [
@@ -26,17 +26,17 @@ module.exports = merge(config, {
         minify: {
           removeAttributeQuotes: true,
           collapseWhitespace: true,
-          removeComments: true,
-        },
-      }),
-    ],
+          removeComments: true
+        }
+      })
+    ]
   },
   plugins: [
     new CleanWebpackPlugin(),
     // where to save the minified css file
     new MiniCssExtractPlugin({
-      filename: 'assets/css/style.[contentHash].css',
-    }),
+      filename: 'assets/css/style.[contentHash].css'
+    })
   ],
   module: {
     rules: [
@@ -45,12 +45,12 @@ module.exports = merge(config, {
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
-            options: { publicPath: '../../' },
+            options: { publicPath: '../../' }
           },
           { loader: 'css-loader' },
-          { loader: 'sass-loader' },
-        ],
-      },
-    ],
-  },
+          { loader: 'sass-loader' }
+        ]
+      }
+    ]
+  }
 });

@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 1rem/1.5 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+a,
+button,
+input {
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+.input-box {
+  .input-image {
+    border-radius: inherit;
+    width: 2rem;
+    height: 100%;
+    @include flex(column, center, center, nowrap);
+  }
+
+  input {
+    border-radius: inherit;
+  }
+}

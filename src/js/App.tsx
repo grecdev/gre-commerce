@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import Header from '@components/global/Header';
+import Header from '@components/global/header';
 import HomePage from './pages/HomePage';
 
 const App: React.FC = () => {
