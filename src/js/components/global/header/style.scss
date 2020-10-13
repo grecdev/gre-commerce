@@ -19,9 +19,18 @@
   }
 
   > nav {
-    color: $white;
-    overflow: hidden;
-    padding: 0.3rem 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    @include flex(column, center, center, nowrap);
+    z-index: -1;
+
+    .navbar-container {
+      color: $white;
+      overflow: hidden;
+      padding: 0.3rem 0;
+    }
 
     .line {
       height: 3px;
@@ -33,8 +42,6 @@
     a {
       text-transform: uppercase;
       padding: 0 1rem;
-      padding-bottom: 0.5rem;
-      border: 1px solid transparent;
     }
   }
 
