@@ -275,6 +275,22 @@
   position: fixed;
 }
 
+.container {
+  margin: 0 auto;
+
+  &-sm {
+    width: 1000px;
+  }
+
+  &-md {
+    width: 1200px;
+  }
+
+  &-lg {
+    width: 1300px;
+  }
+}
+
 /* Buttons */
 .btn {
   padding: 0.5rem 1.5rem;
