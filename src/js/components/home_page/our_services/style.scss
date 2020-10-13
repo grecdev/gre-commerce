@@ -1,0 +1,14 @@
+@import '../../../../css/sass_assets/mixins_extends';
+
+#our-services .our-services-container {
+  @include flex(row, space-between, center, nowrap);
+
+  .services-box {
+    @include flex(row, space-between, center, nowrap);
+    margin: 0 1rem;
+
+    img {
+      margin-right: 0.5rem;
+    }
+  }
+}
