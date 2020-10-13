@@ -21,7 +21,8 @@
     "paths": {
       "@actionTypes": ["./src/js/actions/types.ts"],
       "@actions": ["./src/js/actions/"],
-      "@components/*": ["./src/js/components/*"]
+      "@components/*": ["./src/js/components/*"],
+      "@helpers": ["./src/js/helpers.tsx"]
     },
     "noImplicitAny": true,
     "strictNullChecks": true
