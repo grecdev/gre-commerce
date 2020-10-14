@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 
 import { NavLink } from 'react-router-dom';
-import useRouter from '@components/global/useRouter';
+import { useRouter } from '@helpers';
 
 import { connect } from 'react-redux';
 import { setLinePosX, setLineWidth } from '@actions';

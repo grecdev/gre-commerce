@@ -3,7 +3,7 @@ import React from 'react';
 import { getImage } from '@helpers';
 import './style.scss';
 
-import Title from '@components/global/title';
+import Title from '@components/global/Title';
 
 const OurServices = () => {
   return (
