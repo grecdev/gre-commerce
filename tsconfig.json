@@ -22,7 +22,8 @@
       "@actionTypes": ["./src/js/actions/types.ts"],
       "@actions": ["./src/js/actions/"],
       "@components/*": ["./src/js/components/*"],
-      "@helpers": ["./src/js/helpers.tsx"]
+      "@helpers": ["./src/js/helpers.tsx"],
+      "@reducers/*": ["./src/js/reducers/*"]
     },
     "noImplicitAny": true,
     "strictNullChecks": true

@@ -1,5 +1,9 @@
 import { combineReducers } from 'redux';
 
-const reducers: object = {};
+import headerReducer from './headerReducer';
+
+const reducers: object = {
+  header: headerReducer
+};
 
 export default combineReducers(reducers);
