@@ -8,7 +8,8 @@
           "@actions": "./src/js/actions/index.ts",
           "@actionTypes": "./src/js/actions/types.ts",
           "@components": "./src/js/components",
-          "@helpers": "./src/js/helpers.tsx"
+          "@helpers": "./src/js/helpers.tsx",
+          "@reducers": "./src/js/reducers"
         }
       }
     ]

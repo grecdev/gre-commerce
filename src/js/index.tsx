@@ -10,11 +10,26 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import '../css/style.scss';
 
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#4d5259'
+    },
+    secondary: {
+      main: '#fd8625'
+    }
+  }
+});
+
 ReactDOM.render(
   <StrictMode>
     <Router>
       <Provider store={store}>
-        <App />
+        <ThemeProvider theme={theme}>
+          <App />
+        </ThemeProvider>
       </Provider>
     </Router>
   </StrictMode>,
