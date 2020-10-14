@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import makeStyles from '@material-ui/core/styles/makeStyles';
 
-import {getImage} from '@helpers';
+import { getImage } from '@helpers';
 
 const useStyles = makeStyles(theme => ({
   home_showcase: {
@@ -32,13 +32,11 @@ const useStyles = makeStyles(theme => ({
       display: 'inline-block'
     }
   }
-
 }));
 
 const HomeShowcase = () => {
-
   const classes = useStyles();
-  
+
   return (
     <section id='home-showcase' className={`position-relative ${classes.home_showcase}`}>
       <div className={`${classes.showcase_text} text-center`}>
