@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import { getImage } from '@helpers';
+import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
+import SearchOutlinedIcon from '@material-ui/icons/SearchOutlined';
 
 const useStyles = makeStyles(theme => ({
   header_search_cart: {
@@ -32,9 +33,9 @@ const useStyles = makeStyles(theme => ({
     },
     '& #enable-cart-menu': {
       cursor: 'pointer',
-      '& img': {
-        width: '30px'
-      }
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center'
     }
   }
 }));
@@ -55,7 +56,7 @@ const HeaderSearchCart = () => {
     <div className={classes.header_search_cart}>
       <div className='input-box position-relative'>
         <div className='input-image position-absolute'>
-          <img src={getImage('icons/search-icon.svg')} alt='search icon' />
+          <SearchOutlinedIcon color='primary' />
         </div>
 
         <input
@@ -68,7 +69,7 @@ const HeaderSearchCart = () => {
       </div>
 
       <button id='enable-cart-menu' className='ml-1' type='button'>
-        <img src={getImage('icons/shopping-cart.svg')} alt='cart icon' />
+        <ShoppingCartOutlinedIcon />
       </button>
     </div>
   );
